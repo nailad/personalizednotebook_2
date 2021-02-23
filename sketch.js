@@ -23,7 +23,8 @@ function setup() {
   gui_setup.addColor(gui, 'paperlinec').onChange(update);
   
  gui_setup.add(gui, 'description').onChange(description);
- //gui_setup.addColor(gui, 'dColor').onChange(description);
+ 
+  //gui_setup.addColor(gui, 'dColor').onChange(description);
     
    
 frameRate(120);
@@ -86,5 +87,5 @@ function Gui(){
 
 }
 function windowResized(){
-  createCanvas(windowWidth,windowHeight);
+  resizeCanvas(windowWidth,windowHeight);
 }
